@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de pedido</title>
+    <link rel="stylesheet" href="Formulario.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h2>Formulario de pedidos</h2>
+        <form action="https://formsubmit.co/fjvaldiviaor@gmail.com" method="POST">
+            <label for="nombre">Escriba su nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+            <label for="Apellido">Escribe apellidos</label>
+            <input type="text" id="apellido" name="apellido" placeholder="Ingrese sus apellidos", required>
+            <label for="direction">Dirección de entrega</label>
+            <input type="text" id="direccion" name="direccion" placeholder="Ingrese su direccion de entrega", required>
+            <label for="telefono">Escribir Telefono</label>
+            <input type="text" id="Telefono" id="direccion" name="Telefono" placeholder="Ingrese su numero de telefono",required >
+            <label for="productos">Seleccionar varios productos</label>
+            <select name="Productos" id="Productos" multiple required size="20">
+                <option value="Mouse">Mouse</option>
+                <option value="Teclado">Teclado</option>
+                <option value="Monitor 14">Monitor 14</option>
+                <option value="Monitor 17">Monitor 17</option>
+                <option value="Monitor 19">Monitor 19</option>
+                <option value="Monitor 24">Monitor 24</option>
+                <option value="Laptop Lenovo">Laptop Lenovo</option>
+                <option value="Laptop Hp">Laptop Hp</option>
+                <option value="Laptop acer">Laptop acer</option>
+                <option value="Laptop dell">Laptop dell</option>
+                <option value="Lapto mcbook">Laptop mcbook</option>
+                <option value="Laptop samsung">Laptop Samsung</option>
+            </select>
+            <small>Sleccione CTRL para seleccionar uno o mas productos</small>
+            <label for="observaciones">Observaciones</label>
+            <textarea name="observaciones" id="observaciones" placeholder="Ingrese observaciones sobre su pedido" rows="18"></textarea>
+            <button type="submit">Enviar Pedido</button>
+
+
+        
+        </form>
+    </div>
+</body>
+</html>

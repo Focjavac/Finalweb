@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de cursos</title>
+    <link rel="stylesheet" href="Formulario2.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h2>Cursos</h2>
+        <form action="https://formsubmit.co/fjvaldiviaor@gmail.com" method="POST">
+            <label for="Nombre">Escriba su nombre</label>
+            <input type="text" id="nombre" name="nombre" placeholder="Ingrese su nombre">
+            <label for="Apellidos">Escriba sus apellidos</label>
+            <input type="text" id="apellidos" name="apellidos" placeholder="Ingrese sus apellidos">
+            <label for="Horario">Seleccionar horario</label>
+            <select name="Horario" id="Horario" multiple required size="20">
+                <option value="Mañana">Mañana</option>
+                <option value="Tarde">Tarde</option>
+                <option value="Noche">Noche</option>
+            </select>
+
+            <label for="Curso">Seleccionar curso</label>
+            <select name="Curso" id="Curso" multiple required size="20">
+                <option value="Java">Java</option>
+                <option value="Python">Python</option>
+                <option value="Html">Html</option>
+                <option value="Base de datos">Base de datos</option>
+
+            </select>
+            <small>Seleccione CTRL para seleccionar uno o mas productos</small>
+            <label for="Observaciones">Observaciones</label>
+            <textarea name="observaciones" id="observaciones" placeholder="Ingrese observaciones sobre su eleccion" rows="18"></textarea>
+            <button type="submit">Enviar solicitud</button>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        </form>
+
+
+
+
+
+
+
+
+
+
+    </div>
+</body>
+</html>

@@ -1,0 +1,95 @@
+/* Fondo general */
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right, #eef2f7, #e3e9f0);
+    margin: 0;
+    padding: 30px;
+}
+
+/* Título opcional si luego agregas uno */
+h1 {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+/* Tabla */
+table {
+    width: 90%;
+    margin: auto;
+    border-collapse: collapse;
+    background: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 6px 15px rgba(0,0,0,0.15);
+}
+
+/* Encabezado */
+th {
+    background: #1e3a8a;
+    color: white;
+    padding: 14px;
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+/* Celdas */
+td {
+    padding: 12px;
+    text-align: center;
+    font-size: 13px;
+}
+
+/* Filas alternadas */
+tr:nth-child(even) {
+    background-color: #f7f9fc;
+}
+
+/* Hover */
+tr:hover {
+    background-color: #dbeafe;
+    transition: 0.2s;
+}
+
+/* Imágenes */
+td img {
+    width: 65px;
+    height: 65px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 2px solid #1e3a8a;
+}
+
+/* Nombre más fuerte */
+td:first-child {
+    font-weight: bold;
+    text-align: left;
+    padding-left: 15px;
+}
+
+/* Partido político */
+td:nth-child(2) {
+    font-size: 12px;
+    color: #555;
+}
+
+/* CV */
+td:last-child {
+    font-style: italic;
+    color: #333;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    table {
+        width: 100%;
+    }
+
+    td {
+        font-size: 11px;
+    }
+
+    td img {
+        width: 45px;
+        height: 45px;
+    }
+}

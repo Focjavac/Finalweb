@@ -1,0 +1,121 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600&display=swap');
+
+body {
+    background-color: #eef2f3;
+    font-family: 'Inter', sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+}
+
+.contenedor {
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 16px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.1);
+    width: 100%;
+    max-width: 550px;
+}
+
+h2 {
+    text-align: center;
+    color: #1a1a1a;
+    margin-top: 0;
+    margin-bottom: 30px;
+    font-size: 1.8rem;
+}
+
+label {
+    display: block;
+    margin-bottom: 8px;
+    color: #444;
+    font-weight: 600;
+    font-size: 0.9rem;
+    margin-top: 20px;
+}
+
+/* Estilo para inputs, selects y textarea */
+input[type="text"],
+select,
+textarea {
+    width: 100%;
+    padding: 12px 15px;
+    border: 1px solid #d1d5db;
+    border-radius: 8px;
+    box-sizing: border-box;
+    font-size: 1rem;
+    background-color: #f9fafb;
+    transition: all 0.3s ease;
+}
+
+/* Ajuste específico para los selects múltiples */
+select[multiple] {
+    height: auto; /* Para que el size="20" no rompa el diseño si es muy grande */
+    max-height: 150px; /* Limitamos la altura para que sea cómodo */
+    padding: 5px;
+}
+
+select[multiple] option {
+    padding: 8px;
+    border-radius: 4px;
+}
+
+/* Estilo para el área de texto */
+textarea {
+    resize: vertical;
+    min-height: 100px; /* Ajustado para que no ocupe toda la pantalla */
+}
+
+/* Efectos de enfoque */
+input:focus, select:focus, textarea:focus {
+    outline: none;
+    border-color: #4f46e5;
+    background-color: #fff;
+    box-shadow: 0 0 0 4px rgba(79, 70, 229, 0.1);
+}
+
+/* Nota pequeña debajo de los cursos */
+small {
+    display: block;
+    color: #6b7280;
+    margin-top: 8px;
+    font-size: 0.8rem;
+    font-style: italic;
+}
+
+/* Botón de envío */
+button {
+    width: 100%;
+    background-color: #4f46e5;
+    color: white;
+    padding: 15px;
+    border: none;
+    border-radius: 8px;
+    font-size: 1rem;
+    font-weight: 600;
+    cursor: pointer;
+    margin-top: 30px;
+    transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+    background-color: #4338ca;
+}
+
+button:active {
+    transform: scale(0.98);
+}
+
+/* Optimización para móviles */
+@media (max-width: 480px) {
+    .contenedor {
+        padding: 25px;
+    }
+    
+    h2 {
+        font-size: 1.5rem;
+    }
+}

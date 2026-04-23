@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de hotel</title>
+    <link rel="stylesheet" href="Formulario1.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h2>Hotel el paraiso</h2>
+        <form action="https://formsubmit.co/fjvaldiviaor@gmail.com" method="POST">
+            <label for="Nombre">Introduzca su nombre: </label>
+            <input type="text" id="Nombre" name="Nombre" placeholder="Introduzca su nombre">
+            <label for="Clave">Introduzca su cable de identificación(4 letras):</label>
+            <input type="text" id="Clave" name="Clave" placeholder="Introduzca su cable de identificación(4 letras):">
+            <label for="Habitacion">Tipo de habitacion</label>
+                <label>
+                    <input type="radio" name="Habitacion" value="Individual"> Individual
+                </label>
+                <label>
+                    <input type="radio" name="Habitacion" value="Doble"> Doble
+                </label>
+            <label for="Extra">Opciones extra</label>
+                <label>
+                    <input type="checkbox" name="Extra" value="Desayuno en cama" > Desayuno en cama
+                </label>
+                <label>
+                    <input type="checkbox" name="Extra" value="Jakuzzi"> Jakuzzi
+                </label>
+                <label>
+                    <input type="checkbox" name="Extra" value="Climatizador"> Climatizador
+                </label>
+                   <label for="observaciones">Observaciones</label>
+            <textarea name="observaciones" id="observaciones" placeholder="Ingrese observaciones sobre su reserva" rows="18"></textarea>
+            <button type="submit">Enviar reserva</button>
+
+        </form>
+    </div>
+</body>
+</html>

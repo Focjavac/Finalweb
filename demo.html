@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+
+<html lang="es">
+
+<head>
+
+<meta charset="UTF-8">
+
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Álbum de Fotos</title>
+
+
+
+<style>
+
+  body {
+
+    font-family: Arial;
+
+    text-align: center;
+
+  }
+
+
+
+  .slider {
+
+    width: 400px;
+
+    height: 250px;
+
+    margin: auto;
+
+    overflow: hidden;
+
+    border-radius: 10px;
+
+  }
+
+
+
+  .slider img {
+
+    width: 100%;
+
+    height: 100%;
+
+    display: none;
+
+  }
+
+
+
+  .activo {
+
+    display: block;
+
+  }
+
+</style>
+
+</head>
+
+
+
+<body>
+
+
+
+<h2>Álbum de Fotos</h2>
+
+
+
+<div class="slider">
+
+  <img src="fotos/acuña.jpg"activo">
+
+  <img src="fotos/alavarez.jpg">
+
+  <img src="fotos/keiko.jpeg">
+
+  <img src="fotos/aliaga.jpg">
+
+</div>
+
+
+
+<script>
+
+  let imagenes = document.querySelectorAll(".slider img");
+
+  let indice = 0;
+
+
+
+  function cambiarImagen() {
+
+    imagenes[indice].classList.remove("activo");
+
+    indice = (indice + 1) % imagenes.length;
+
+    imagenes[indice].classList.add("activo");
+
+  }
+
+
+
+  setInterval(cambiarImagen, 2000); // Cambia cada 2 segundos
+
+</script>
+
+
+
+</body>
+
+</html>

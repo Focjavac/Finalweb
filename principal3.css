@@ -1,0 +1,91 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  background-color: #f4f4f4;
+  text-align: center;
+}
+
+/* TITULOS */
+h2 {
+  margin-top: 30px;
+  color: #333;
+}
+
+/* PADRE */
+.padre {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+/* HIJO (FILA PRINCIPAL) */
+.hijo {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  flex-wrap: wrap; /* baja si la pantalla es pequeña */
+  margin-top: 20px;
+}
+
+/* CARDS */
+.nieto {
+  background: white;
+  width: 300px;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+  text-align: left;
+}
+
+/* IMÁGENES */
+.nieto img {
+  width: 100%;
+  height: 180px;
+  object-fit: contain;
+  margin-top: 10px;
+}
+
+/* COLORES OPCIONALES */
+.sql {
+  border-top: 5px solid orange;
+}
+
+.javascript {
+  border-top: 5px solid gold;
+}
+
+.python {
+  border-top: 5px solid dodgerblue;
+}
+
+/* SLIDER */
+
+
+.slider img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+/* FOOTER */
+footer {
+  background-color: #222;
+  color: white;
+  padding: 15px;
+  margin-top: 40px;
+}
+.slider {
+  width: 400px;
+  overflow: hidden;
+  margin: auto;
+}
+
+.track {
+  display: flex;
+  transition: transform 0.5s ease;
+}
+.track img{
+  width: 400px;
+  height: 250px;
+  object-fit: cover;
+}

@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulario de productos</title>
+    <link rel="stylesheet" href="Formulario3.css">
+</head>
+<body>
+    <div class="contenedor">
+        <h2>Distribuidora</h2>
+            <form action="https://formsubmit.co/fjvaldiviaor@gmail.com" method="POST">
+            <label for="nombre">Ingresa tu nombre</label>
+            <input type="text" id="Nombre" name="Nombre" placeholder="Introduzca su nombre">
+            <label for="Apellidos">Escriba sus apellidos</label>
+            <input type="text" id="apellidos" name="apellidos" placeholder="Ingrese sus apellidos">
+            <label for="Turno">Selecciona tu turno</label>
+                <label>
+                    <input type="radio" name="Turno" value="mañana"> Mañana
+                </label>
+                <label>
+                    <input type="radio" name="Turno" value="tarde"> Tarde
+                </label>
+                <label>
+                    <input type="radio" name="Turno" value="noche"> Noche
+                </label>
+            <label for="Productos">Productos</label>
+                <label>
+                    <input type="checkbox" name="Productos" value="galletas"> Galletas
+                </label>
+             <label>
+                    <input type="checkbox" name="Productos" value="Arroz"> Arroz
+                </label>
+                <label>
+                    <input type="checkbox" name="Productos" value="Aceite"> Aceite
+                </label>
+                <label>
+                    <input type="checkbox" name="Productos" value="Papa"> Papa
+                </label>
+                <label for="Observaciones">Observaciones</label>
+                <textarea name="observaciones" id="observaciones" placeholder="Ingrese observaciones sobre su eleccion" rows="18"></textarea>
+                <button type="submit">Enviar solicitud y pedido</button>
+        </form>
+    </div>
+    
+</body>
+</html>

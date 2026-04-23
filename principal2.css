@@ -1,0 +1,122 @@
+/* Importar una fuente moderna */
+@import url('https://fonts.googleapis.com/css2?family=Segoe+UI:wght@400;600&display=swap');
+
+body {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); /* Fondo degradado moderno */
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    flex-direction: column;
+}
+
+nav {
+    background-color: rgba(255, 255, 255, 0.95);
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 15px 35px rgba(0,0,0,0.2);
+    width: 100%;
+    max-width: 400px;
+}
+
+h2 {
+    text-align: center;
+    color: #4a148c;
+    margin-top: 0;
+    margin-bottom: 25px;
+    border-bottom: 2px solid #eee;
+    padding-bottom: 10px;
+}
+
+/* Quitar puntos de las listas */
+ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Estilo para el título "Formularios" */
+nav > ul > li {
+    font-weight: 600;
+    color: #333;
+    margin-bottom: 15px;
+    font-size: 1.1rem;
+    display: flex;
+    align-items: center;
+}
+
+nav > ul > li::before {
+    content: "📁"; /* Icono de carpeta */
+    margin-right: 10px;
+}
+
+/* Lista secundaria (los enlaces) */
+ul ul {
+    margin-left: 20px;
+    border-left: 2px solid #e0e0e0;
+    padding-left: 15px;
+}
+
+ul ul li {
+    margin-bottom: 12px;
+}
+
+/* Estilo de los enlaces */
+a {
+    text-decoration: none;
+    color: #555;
+    font-size: 1rem;
+    display: block;
+    padding: 8px 12px;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+}
+
+a:hover {
+    background-color: #f3e5f5;
+    color: #7b1fa2;
+    transform: translateX(5px); /* Efecto de desplazamiento al pasar el mouse */
+}
+
+/* Efecto de "punto" antes de cada enlace */
+ul ul li a::before {
+    content: "•";
+    margin-right: 8px;
+    color: #7b1fa2;
+    font-weight: bold;
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+    nav {
+        margin: 20px;
+        padding: 25px;
+    }
+}
+footer {
+    background-color: #202124;
+    color: white;
+    text-align: center; /* Centra el texto horizontalmente */
+    padding: 20px;
+    width: 100%;
+    box-sizing: border-box;
+    margin: 15px;
+    
+}
+
+ul ul li a::before {
+    content: "•";
+    margin-right: 8px;
+    color: #7b1fa2;
+    font-weight: bold;
+}
+
+/* Responsivo */
+@media (max-width: 480px) {
+    nav {
+        margin: 20px;
+        padding: 25px;
+    }
+}

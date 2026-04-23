@@ -1,0 +1,57 @@
+body{
+    font-family: Arial, sans-serif;
+    background-color: #f4f6f9;
+    margin: 20px;
+}
+
+/* Tabla */
+table{
+    width: 100%;
+    border-collapse: collapse;
+    background-color: white;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+/* Encabezados */
+th{
+    background-color: #1e3a8a;
+    color: white;
+    padding: 12px;
+    text-transform: uppercase;
+}
+
+/* Celdas */
+td{
+    padding: 10px;
+    text-align: center;
+}
+
+/* Filas alternas */
+tr:nth-child(even){
+    background-color: #f2f2f2;
+}
+
+/* Hover (cuando pasas el mouse) */
+tr:hover{
+    background-color: #dbeafe;
+    transition: 0.3s;
+}
+
+/* Imágenes */
+img{
+    width: 70px;
+    height: 70px;
+    object-fit: cover;
+    border-radius: 50%;
+}
+
+/* Links CV */
+a{
+    text-decoration: none;
+    color: #1e3a8a;
+    font-weight: bold;
+}
+
+a:hover{
+    text-decoration: underline;
+}
